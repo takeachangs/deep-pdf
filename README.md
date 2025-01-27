@@ -1,4 +1,4 @@
-# PDF Extractor
+# 📕 Deep PDF 
 
 A Python-based tool specifically designed to solve the challenge of extracting data from complex PDF tables, including nested tables and intricate layouts. While most PDF extraction tools struggle with complex table structures, this project uses advanced techniques to accurately parse and extract data from sophisticated table formats.
 
@@ -63,7 +63,10 @@ pip install -r requirements.txt
 ```
 
 3. Set up environment variables:
-Create a `.streamlit/secrets.toml` file with necessary configurations (e.g., OpenAI API key)
+Create a `.streamlit/secrets.toml` file with your OpenAI API key:
+```bash
+mkdir -p .streamlit && echo 'OPENAI_API_KEY = "your-api-key-here"' > .streamlit/secrets.toml
+```
 
 ## Usage
 
@@ -184,4 +187,4 @@ Feature requests are welcome! Please provide:
 - Use cases and benefits
 - Any potential implementation ideas
 
-Thank you for contributing to PDF Extractor!
+Thank you for contributing to Deep PDF!
