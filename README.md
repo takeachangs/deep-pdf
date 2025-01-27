@@ -187,4 +187,4 @@ Feature requests are welcome! Please provide:
 - Use cases and benefits
 - Any potential implementation ideas
 
-Thank you for contributing to PDF Extractor!
+Thank you for contributing to Deep PDF!
