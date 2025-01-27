@@ -54,7 +54,7 @@ pdf-extractor/
 1. Clone the repository:
 ```bash
 git clone [repository-url]
-cd pdf-extractor
+cd deep-pdf
 ```
 
 2. Install the required dependencies:
