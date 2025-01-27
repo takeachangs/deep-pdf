@@ -1,4 +1,4 @@
-# Deep PDF
+# 📕 Deep PDF 
 
 A Python-based tool specifically designed to solve the challenge of extracting data from complex PDF tables, including nested tables and intricate layouts. While most PDF extraction tools struggle with complex table structures, this project uses advanced techniques to accurately parse and extract data from sophisticated table formats.
 
