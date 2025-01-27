@@ -37,7 +37,7 @@ def get_download_json(results):
 def main():
     st.set_page_config(
         page_title="Deep PDF",
-        page_icon="📄",
+        page_icon="📕",
         layout="wide"
     )
 
