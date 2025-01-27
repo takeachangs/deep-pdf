@@ -65,7 +65,7 @@ pip install -r requirements.txt
 3. Set up environment variables:
 Create a `.streamlit/secrets.toml` file with your OpenAI API key:
 ```bash
-mkdir -p .streamlit && echo 'OPENAI_API_KEY = "your own key"' > .streamlit/secrets.toml
+mkdir -p .streamlit && echo 'OPENAI_API_KEY = "your-api-key-here"' > .streamlit/secrets.toml
 ```
 
 ## Usage
