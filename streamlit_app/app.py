@@ -14,12 +14,12 @@ from pdf_extractor.extractors.table_extractor import TableExtractor
 
 def main():
     st.set_page_config(
-        page_title="PDF Table Extractor",
+        page_title="Deep PDF",
         page_icon="📄",
         layout="wide"
     )
 
-    st.title("PDF Table Extractor")
+    st.title("Deep PDF – Data Extractor for PDFs with complex tables ")
     st.write("Upload a PDF file to extract tables and convert them to structured data.")
 
     # Initialize session state
