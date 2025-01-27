@@ -54,7 +54,7 @@ pdf-extractor/
 1. Clone the repository:
 ```bash
 git clone [repository-url]
-cd deep-pdf
+cd pdf-extractor
 ```
 
 2. Install the required dependencies:
@@ -132,52 +132,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributing
 
 Contributions are welcome! Here's how you can help improve this project:
-
-1. **Fork the Repository**
-   - Fork the project to your GitHub account
-   - Clone your fork locally
-
-2. **Create a Branch**
-   - Create a new branch for your feature or bug fix
-   - Use clear, descriptive branch names (e.g., `feature/nested-table-detection` or `fix/merged-cell-handling`)
-
-3. **Make Changes**
-   - Follow the existing code style and conventions
-   - Add or update tests as needed
-   - Add or update documentation as needed
-
-4. **Test Your Changes**
-   - Ensure all tests pass
-   - Add new test cases for new features
-   - Test with various PDF formats and table structures
-
-5. **Submit a Pull Request**
-   - Push your changes to your fork
-   - Submit a pull request to the main repository
-   - Provide a clear description of the changes
-   - Link any relevant issues
-
-6. **Code Review**
-   - Address any code review feedback
-   - Keep your PR up to date with the main branch
-
-### Development Guidelines
-
-- Follow PEP 8 style guidelines for Python code
-- Write descriptive commit messages
-- Document new features and changes
-- Add type hints to Python functions
-- Keep functions focused and modular
-
-### Reporting Issues
-
-When reporting issues, please include:
-
-- A clear description of the problem
-- Steps to reproduce the issue
-- Expected vs actual behavior
-- Sample PDF files (if possible)
-- Your environment details (OS, Python version, etc.)
 
 ### Feature Requests
 
