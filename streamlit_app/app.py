@@ -24,20 +24,31 @@ def render_pdf_page(pdf_bytes: bytes, page_number: int) -> Image.Image:
 
 def get_download_json(results):
     """Prepare the complete JSON data for download."""
+    # Process the content to remove newlines from text content
+    processed_results = []
+    for page in results:
+        page_data = page.copy()
+        if page_data['extraction_type'] == 'text':
+            # Replace newlines with spaces in text content
+            page_data['content'] = ' '.join(page_data['content'].split())
+        processed_results.append(page_data)
+
     full_data = {
-        "total_pages": len(results),
-        "pages": results,
+        "total_pages": len(processed_results),
+        "pages": processed_results,
         "metadata": {
             "extraction_time": st.session_state.processing_time,
             "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
         }
     }
-    return json.dumps(full_data, indent=2, ensure_ascii=False).encode('utf-8')
+    
+    # Use compact encoding (no pretty print) and ensure proper UTF-8 encoding
+    return json.dumps(full_data, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
 
 def main():
     st.set_page_config(
         page_title="Deep PDF",
-        page_icon="📕",
+        page_icon="📄",
         layout="wide"
     )
 
@@ -167,12 +178,11 @@ def main():
                     st.session_state.current_page -= 1
             
             with mid_col:
-                # Use radio buttons styled as a dropdown
                 page_options = [f"Page {i}/{total_pages}" for i in range(1, total_pages + 1)]
-                selected = st.select_slider(
+                selected = st.selectbox(
                     "Select page",
                     options=page_options,
-                    value=f"Page {st.session_state.current_page}/{total_pages}",
+                    index=st.session_state.current_page - 1,
                     label_visibility="collapsed"
                 )
                 st.session_state.current_page = page_options.index(selected) + 1
