@@ -124,21 +124,3 @@ The project uses a modular structure that allows for easy extension:
 2. Specialized extractors in `extractors/` implement complex table parsing
 3. Configuration is centralized in `config/`
 4. Web interface provides visual feedback and extraction results
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Contributions are welcome! Here's how you can help improve this project:
-
-### Feature Requests
-
-Feature requests are welcome! Please provide:
-
-- A clear description of the feature
-- Use cases and benefits
-- Any potential implementation ideas
-
-Thank you for contributing to Deep PDF!
